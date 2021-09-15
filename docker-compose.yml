@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  gallery-dl:
+    image: aphy7/gallery-dl
+    container_name: gallery-dl
+    
+    dns: 1.1.1.1
+    
+    stdin_open: true
+    tty: true
+    
+    security_opt:
+      - no-new-privileges:true
