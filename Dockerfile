@@ -15,4 +15,5 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 
 USER $UID:$GID
-CMD [ "/bin/bash" ]
+ENTRYPOINT [ "gallery-dl" ]
+CMD [ "--help" ]
