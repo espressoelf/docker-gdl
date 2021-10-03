@@ -4,14 +4,15 @@ on:
   release:
     types: [published]
   workflow_dispatch:
-    gdl-v:
-      description: 'Version of gallery-dl'
-      required: true
-      default: 'v1.19.0'
-    ytdlp-v:
-      description: 'Verion of yt-dlp'
-      required: true
-      default: '2021.09.25'
+    inputs:
+      gdl-v:
+        description: 'Version of gallery-dl'
+        required: true
+        default: 'v1.19.0'
+      ytdlp-v:
+        description: 'Verion of yt-dlp'
+        required: true
+        default: '2021.09.25'
 
 jobs:
   build:
