@@ -36,5 +36,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: aphy7/gallery-dl:latest aphy7/gallery-dl:${{ github.event.inputs.gdl-v }}-${{ github.event.inputs.ytdlp-v }}
+          tags: aphy7/gallery-dl:latest,aphy7/gallery-dl:${{ github.event.inputs.gdl-v }}-${{ github.event.inputs.ytdlp-v }}
           platforms: linux/amd64
