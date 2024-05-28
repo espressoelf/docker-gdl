@@ -12,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
     ln -s /srv/gallery-dl/.ytcache /.cache && \
     apt-get update && apt-get install -y --no-install-recommends ffmpeg && \
     pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir yt-dlp && \
+    pip install --no-cache-dir "yt-dlp[default,curl-cffi]" && \
     pip install --no-cache-dir gallery-dl
 
 
